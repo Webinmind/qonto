@@ -1,0 +1,38 @@
+<div class="container-fluid">
+	<div class="row">
+	  <div class="col-sm-3">
+	  	<h1 class="">FINPAL</h1>
+	  	<ul class="list-unstyled">
+	  		<li class="cleargrey">Overview</li>
+	  		<li class="cleargrey">Transactions</li>
+	  		<li class="separator"></li>
+	  	</ul>
+  	</div>	
+ 	  <div class="col-sm-6">
+	    <table class="table">
+	      <thead>
+	        <th>DD-MM-YYY</th>
+	        <th>Counterparty Name</th>
+	        <th>Payment type</th>
+	        <th>Amount</th>
+	        <th>Link</th>
+	      </thead>
+	      <tbody>
+	      	{{#each model as |transaction|}}
+	      	<tr>
+	      		<td>{{transaction.created_at}}</td>
+	      		<td>{{transaction.counterparty_name}}</td>
+	      		<td>{{transaction.operation_type}}</td>
+	      		<td>{{transaction.amount}}</td>
+	      		<td>{{transaction.attachements}}</td>
+	    		</tr>
+	    		{{/each}}
+	      </tbody>
+	    </table>
+	   </div>
+    </div>	
+    <div class="row">
+	    <div class="col-sm-3">
+	  </div>
+	</div>
+</div>

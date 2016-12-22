@@ -1,0 +1,11 @@
+@import 'bootstrap.css';
+
+.darkgrey {
+	background-color: #363D45; 
+}
+.grey{
+	background-color: #3E4750;
+}
+.cleargrey{
+	color: #8D969F;
+}
